@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "base pedidos"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "4ad7c59a-1ee0-4a7e-84a3-155857d6cbb4"
+  }
+}

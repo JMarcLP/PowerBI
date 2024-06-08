@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "base pedidos"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "14c08890-38fd-47c6-a19a-ee78734912dc"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 1487.2090852942197,
+            "y": 192.07724534137139
+          },
+          "nodeIndex": "BasePedidos",
+          "nodeLineageTag": "9e89103b-6de7-4fb2-ada9-f06bb4c203ef",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 768.45281902921511,
+            "y": 224.87119049629507
+          },
+          "nodeIndex": "DCliente",
+          "nodeLineageTag": "2747d0a0-4484-4a4d-b6d6-3cb4c4683ea5",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 215,
+            "y": 0
+          },
+          "nodeIndex": "DFactura",
+          "nodeLineageTag": "3c74813c-c724-4959-84a0-e8302b33add6",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 20.452819029215107,
+            "y": 171.32885060050864
+          },
+          "nodeIndex": "DFechaEntrega",
+          "nodeLineageTag": "7bfe94d1-7fa3-47bd-b2da-fc287b17177c",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 116.45281902921511,
+            "y": 426.32885060050864
+          },
+          "nodeIndex": "DFechaPedido",
+          "nodeLineageTag": "c57b7c06-e6aa-4274-b92e-09544f466f53",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 612,
+            "y": 0
+          },
+          "nodeIndex": "DLugar",
+          "nodeLineageTag": "29051ce9-915e-4b43-9589-a2b3d477c360",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 401,
+            "y": 560.602440663574
+          },
+          "nodeIndex": "DVendedor",
+          "nodeLineageTag": "c68c2d93-3848-419a-9b0f-0183306e50d2",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 737.45281902921511,
+            "y": 371.301220331787
+          },
+          "nodeIndex": "DProducto",
+          "nodeLineageTag": "a1c99966-c034-4306-8b99-bd2d924a50a6",
+          "size": {
+            "height": 128,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 370,
+            "y": 127.30122033178702
+          },
+          "nodeIndex": "HPedidos",
+          "nodeLineageTag": "82e7c6e0-3cb3-455a-b46f-28dbe71d065a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

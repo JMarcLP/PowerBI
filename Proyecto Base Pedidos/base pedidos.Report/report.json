@@ -1,0 +1,144 @@
+{
+  "config": "{\"version\":\"5.54\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU05\",\"version\":\"5.54\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU05",
+            "path": "BaseThemes/CY24SU05.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Página 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "53c15988601ad675a8cb",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"3e920e3810ae413701a0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":261.1111111111111,\"height\":126.66666666666666,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(HPedidos.Precio)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HPedidos\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Precio\"}},\"Function\":0},\"Name\":\"Sum(HPedidos.Precio)\",\"NativeReferenceName\":\"Suma de Precio\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Precio\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 126.67,
+          "width": 261.11,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"44bf3688c00706ab021b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":224.54545454545453,\"z\":1000,\"width\":330,\"height\":109.99999999999999,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(HPedidos.Producto)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HPedidos\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Producto\"}},\"Function\":3},\"Name\":\"Min(HPedidos.Producto)\",\"NativeReferenceName\":\"Primera fecha: Producto\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 110.00,
+          "width": 330.00,
+          "x": 0.00,
+          "y": 224.55,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"4eb92420e5db38690c88\",\"layouts\":[{\"id\":0,\"position\":{\"x\":271.34328358208955,\"y\":10.746268656716417,\"z\":3000,\"width\":342.98507462686564,\"height\":178.2089552238806,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DProducto.Categoría\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(HPedidos.Subtotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DProducto\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"HPedidos\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Categoría\"},\"Name\":\"DProducto.Categoría\",\"NativeReferenceName\":\"Categoría\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Subtotal\"}},\"Function\":0},\"Name\":\"Sum(HPedidos.Subtotal)\",\"NativeReferenceName\":\"Suma de Subtotal\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Subtotal\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 178.21,
+          "width": 342.99,
+          "x": 271.34,
+          "y": 10.75,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"5445a2b504856b09a336\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":114.44444444444444,\"z\":2000,\"width\":261.1111111111111,\"height\":110,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(HPedidos.Cantidad)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HPedidos\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Cantidad\"}},\"Function\":0},\"Name\":\"Sum(HPedidos.Cantidad)\",\"NativeReferenceName\":\"Suma de Cantidad\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Cantidad\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 110.00,
+          "width": 261.11,
+          "x": 0.00,
+          "y": 114.44,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"5552ad5004c7ca40569c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":614.4444444444445,\"y\":0,\"z\":4000,\"width\":665.5555555555555,\"height\":188.88888888888889,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DProducto.Producto\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(HPedidos.Subtotal)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HPedidos\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DProducto\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Subtotal\"}},\"Function\":0},\"Name\":\"Sum(HPedidos.Subtotal)\",\"NativeReferenceName\":\"Suma de Subtotal\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Producto\"},\"Name\":\"DProducto.Producto\",\"NativeReferenceName\":\"Producto\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Subtotal\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 188.89,
+          "width": 665.56,
+          "x": 614.44,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"5609a6fea865c64e1b71\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":451.81818181818176,\"z\":7000,\"width\":330,\"height\":268.1818181818182,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(HPedidos.Vendedor)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HPedidos\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Vendedor\"}},\"Function\":3},\"Name\":\"Min(HPedidos.Vendedor)\",\"NativeReferenceName\":\"Primera fecha: Vendedor\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 268.18,
+          "width": 330.00,
+          "x": 0.00,
+          "y": 451.82,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"9720fd421331870c4a42\",\"layouts\":[{\"id\":0,\"position\":{\"x\":330,\"y\":169.09090909090907,\"z\":5000,\"width\":929.090909090909,\"height\":262.7272727272727,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DFechaEntrega.Fecha de entrega.Variación.Jerarquía de fechas.Año\",\"active\":true},{\"queryRef\":\"DFechaEntrega.Fecha de entrega.Variación.Jerarquía de fechas.Trimestre\"},{\"queryRef\":\"DFechaEntrega.Fecha de entrega.Variación.Jerarquía de fechas.Mes\"},{\"queryRef\":\"DFechaEntrega.Fecha de entrega.Variación.Jerarquía de fechas.Día\"}],\"Y\":[{\"queryRef\":\"Sum(HPedidos.Cantidad)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DFechaEntrega\",\"Type\":0},{\"Name\":\"h\",\"Entity\":\"HPedidos\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variación\",\"Property\":\"Fecha de entrega\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Año\"},\"Name\":\"DFechaEntrega.Fecha de entrega.Variación.Jerarquía de fechas.Año\",\"NativeReferenceName\":\"Fecha de entrega Año\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variación\",\"Property\":\"Fecha de entrega\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Trimestre\"},\"Name\":\"DFechaEntrega.Fecha de entrega.Variación.Jerarquía de fechas.Trimestre\",\"NativeReferenceName\":\"Fecha de entrega Trimestre\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variación\",\"Property\":\"Fecha de entrega\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Mes\"},\"Name\":\"DFechaEntrega.Fecha de entrega.Variación.Jerarquía de fechas.Mes\",\"NativeReferenceName\":\"Fecha de entrega Mes\"},{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"PropertyVariationSource\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Name\":\"Variación\",\"Property\":\"Fecha de entrega\"}},\"Hierarchy\":\"Jerarquía de fechas\"}},\"Level\":\"Día\"},\"Name\":\"DFechaEntrega.Fecha de entrega.Variación.Jerarquía de fechas.Día\",\"NativeReferenceName\":\"Fecha de entrega Día\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Cantidad\"}},\"Function\":0},\"Name\":\"Sum(HPedidos.Cantidad)\",\"NativeReferenceName\":\"Suma de Cantidad\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 262.73,
+          "width": 929.09,
+          "x": 330.00,
+          "y": 169.09,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"c1a11583460d55798bdc\",\"layouts\":[{\"id\":0,\"position\":{\"x\":330,\"y\":451.81818181818176,\"z\":6000,\"width\":949.9999999999999,\"height\":268.1818181818182,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"lineClusteredColumnComboChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DCliente.Cliente\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(HPedidos.Cantidad)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HPedidos\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DCliente\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Cantidad\"}},\"Function\":0},\"Name\":\"Sum(HPedidos.Cantidad)\",\"NativeReferenceName\":\"Suma de Cantidad\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Cliente\"},\"Name\":\"DCliente.Cliente\",\"NativeReferenceName\":\"Cliente\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Cantidad\"}},\"Function\":0}}}]},\"autoSelectVisualType\":false,\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 268.18,
+          "width": 950.00,
+          "x": 330.00,
+          "y": 451.82,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"cc344a400d164b7ca5a1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":334.5454545454545,\"z\":8000,\"width\":330,\"height\":105.45454545454544,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(HPedidos.Categoría)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HPedidos\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Categoría\"}},\"Function\":3},\"Name\":\"Min(HPedidos.Categoría)\",\"NativeReferenceName\":\"Primera fecha: Categoría\"}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 105.45,
+          "width": 330.00,
+          "x": 0.00,
+          "y": 334.55,
+          "z": 8000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Página 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f92588ea7be692d3dc06",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1f89fef0403db729d001\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":246.36363636363635,\"height\":209.99999999999997,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(HPedidos.DiasEntrega)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HPedidos\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"DiasEntrega\"}},\"Function\":2},\"Name\":\"Sum(HPedidos.DiasEntrega)\",\"NativeReferenceName\":\"Recuento de DiasEntrega\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"DiasEntrega\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 210.00,
+          "width": 246.36,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"beecf420779900448580\",\"layouts\":[{\"id\":0,\"position\":{\"x\":224.54545454545453,\"y\":0,\"z\":1000,\"width\":1055.4545454545453,\"height\":209.99999999999997,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DCliente.Cliente\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(HPedidos.Cantidad)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"h\",\"Entity\":\"HPedidos\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DCliente\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"Cliente\"},\"Name\":\"DCliente.Cliente\",\"NativeReferenceName\":\"Cliente\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Cantidad\"}},\"Function\":0},\"Name\":\"Sum(HPedidos.Cantidad)\",\"NativeReferenceName\":\"Suma de Cantidad\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"h\"}},\"Property\":\"Cantidad\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 210.00,
+          "width": 1055.45,
+          "x": 224.55,
+          "y": 0.00,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
